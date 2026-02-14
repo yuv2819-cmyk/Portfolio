@@ -617,6 +617,67 @@
             transform: translateY(-2px);
         }
 
+        /* Certifications */
+        .cert-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .cert-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: block;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(99, 102, 241, 0.3);
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.1);
+        }
+
+        .cert-card h3 {
+            font-size: 1.2rem;
+            color: white;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .cert-issuer {
+            color: #a5b4fc;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .cert-note {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            font-style: italic;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: block;
+        }
+
+        .cert-icon {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            font-size: 1.5rem;
+            opacity: 0.5;
+            color: #6366f1;
+        }
+
         /* Contact */
         .contact-container {
             text-align: center;
@@ -1051,6 +1112,24 @@
                     <span class="skill-tag">PostgreSQL</span>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="section-header fade-in">
+            <span class="section-badge">Credentials</span>
+            <h2 class="section-title">Certifications</h2>
+            <p class="section-subtitle">Professional qualifications and continuous learning.</p>
+        </div>
+
+        <div class="cert-container fade-in">
+            <a href="https://lms.intellipaat.com/certificate-link/?Yz1jdXMtNTU3MjQ0NCZ1PTIwNjc4MiZleHQ9MQ=="
+                target="_blank" class="cert-card">
+                <div class="cert-icon">🎓</div>
+                <h3>Data Science and AI – Core Expertise</h3>
+                <span class="cert-issuer">Intellipaat</span>
+                <span class="cert-note">Note: Name on certificate appears differently</span>
+            </a>
         </div>
     </section>
 
