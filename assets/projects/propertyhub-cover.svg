@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="PropertyHub website cover">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111a3d"/>
+      <stop offset="60%" stop-color="#1e2c5a"/>
+      <stop offset="100%" stop-color="#121a35"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#efd7ad"/>
+      <stop offset="55%" stop-color="#d8e7df"/>
+      <stop offset="100%" stop-color="#c6dceb"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f3f85"/>
+      <stop offset="100%" stop-color="#232f63"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+
+  <rect x="118" y="86" width="1364" height="744" rx="42" fill="#172141" stroke="#30467f" stroke-width="2"/>
+  <rect x="118" y="86" width="1364" height="376" rx="42" fill="url(#glass)"/>
+  <rect x="118" y="434" width="1364" height="396" fill="#1c2747"/>
+
+  <text x="158" y="140" fill="#243453" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800">live market alerts.</text>
+  <text x="158" y="172" fill="#51637f" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600">Filter by location, budget, and size. Get notifications for matching homes.</text>
+
+  <rect x="814" y="88" width="668" height="88" rx="22" fill="#0b6d72"/>
+  <text x="850" y="140" fill="#d5f6f4" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">Active Listings</text>
+  <text x="1056" y="140" fill="#d5f6f4" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">Top Agents</text>
+  <text x="1246" y="140" fill="#d5f6f4" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">24H Alerts</text>
+
+  <rect x="150" y="214" width="1300" height="210" rx="18" fill="#f2f4f8" opacity="0.82"/>
+  <text x="174" y="260" fill="#2f3f60" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800">Advanced Property Search</text>
+  <g fill="#d8deea">
+    <rect x="174" y="284" width="186" height="48" rx="10"/>
+    <rect x="372" y="284" width="186" height="48" rx="10"/>
+    <rect x="570" y="284" width="186" height="48" rx="10"/>
+    <rect x="768" y="284" width="186" height="48" rx="10"/>
+    <rect x="966" y="284" width="186" height="48" rx="10"/>
+    <rect x="1164" y="284" width="260" height="48" rx="10"/>
+    <rect x="174" y="344" width="152" height="48" rx="10"/>
+    <rect x="338" y="344" width="152" height="48" rx="10"/>
+    <rect x="502" y="344" width="152" height="48" rx="10"/>
+    <rect x="666" y="344" width="152" height="48" rx="10"/>
+    <rect x="830" y="344" width="210" height="48" rx="10"/>
+  </g>
+
+  <rect x="146" y="506" width="104" height="104" rx="28" fill="#6e63ff"/>
+  <path d="M178 566v-26l20-16 20 16v26h-14v-18h-12v18h-14z" fill="#e9e7ff"/>
+
+  <text x="140" y="685" fill="#f2f5ff" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="800">PropertyHub Website</text>
+  <text x="140" y="730" fill="#a8b7df" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">HTML | CSS | JavaScript | Maps API</text>
+  <text x="140" y="770" fill="#cad5ef" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="600">Advanced search, interactive maps, virtual tours, and listing alerts.</text>
+
+  <rect x="140" y="786" width="280" height="62" rx="22" fill="#7b66ff"/>
+  <rect x="444" y="786" width="280" height="62" rx="22" fill="#24345f" stroke="#556aa8" stroke-width="2"/>
+  <text x="280" y="827" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Visit Website</text>
+  <text x="584" y="827" fill="#dbe4ff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Case Study</text>
+</svg>

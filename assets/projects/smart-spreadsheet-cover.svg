@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1365" height="1024" viewBox="0 0 1365 1024" role="img" aria-label="Smart Spreadsheet cover">
+  <defs>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+      <rect width="38" height="38" fill="#f4f5f9"/>
+      <path d="M38 0H0V38" fill="none" stroke="#e5e7ee" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1365" height="1024" fill="url(#grid)"/>
+  <g fill="#dfe2ec" opacity="0.55">
+    <rect x="84" y="832" width="52" height="52"/>
+    <rect x="226" y="866" width="44" height="44"/>
+    <rect x="360" y="846" width="56" height="56"/>
+    <rect x="522" y="872" width="46" height="46"/>
+    <rect x="688" y="838" width="60" height="60"/>
+    <rect x="862" y="872" width="46" height="46"/>
+    <rect x="1030" y="844" width="56" height="56"/>
+    <rect x="1190" y="870" width="44" height="44"/>
+  </g>
+  <text x="682.5" y="470" fill="#1c2438" font-family="Arial, Helvetica, sans-serif" font-size="114" font-weight="800" text-anchor="middle">Smart Spreadsheet</text>
+  <text x="682.5" y="595" fill="#e04343" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="700" text-anchor="middle">Ask questions, get insights.</text>
+</svg>

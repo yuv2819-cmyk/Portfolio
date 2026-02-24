@@ -1,0 +1,22 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1365" height="1024" viewBox="0 0 1365 1024" role="img" aria-label="Data Science Projects cover">
+  <defs>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+      <rect width="38" height="38" fill="#f4f5f9"/>
+      <path d="M38 0H0V38" fill="none" stroke="#e5e7ee" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1365" height="1024" fill="url(#grid)"/>
+  <g fill="#dfe2ec" opacity="0.55">
+    <rect x="80" y="830" width="52" height="52"/>
+    <rect x="210" y="862" width="44" height="44"/>
+    <rect x="350" y="840" width="58" height="58"/>
+    <rect x="510" y="872" width="46" height="46"/>
+    <rect x="680" y="834" width="62" height="62"/>
+    <rect x="850" y="870" width="48" height="48"/>
+    <rect x="1018" y="840" width="58" height="58"/>
+    <rect x="1180" y="868" width="46" height="46"/>
+  </g>
+  <text x="682.5" y="400" fill="#1c2438" font-family="Arial, Helvetica, sans-serif" font-size="108" font-weight="800" text-anchor="middle">DATA SCIENCE</text>
+  <text x="682.5" y="535" fill="#1c2438" font-family="Arial, Helvetica, sans-serif" font-size="108" font-weight="800" text-anchor="middle">PROJECTS</text>
+  <text x="682.5" y="640" fill="#5f7ecf" font-family="Arial, Helvetica, sans-serif" font-size="66" font-weight="700" text-anchor="middle">Hands-on data science projects</text>
+</svg>
