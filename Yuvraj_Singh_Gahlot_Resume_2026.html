@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuvraj Singh Gahlot - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+                background: white;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 40px 50px;
+                max-width: 100%;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+
+            .experience-item,
+            .project-item,
+            .education-item {
+                page-break-inside: avoid;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 0;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 45px 60px 40px;
+            margin-bottom: 0;
+            border-bottom: 4px solid #2563eb;
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 60px;
+            width: 100px;
+            height: 4px;
+            background: #fbbf24;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            color: #ffffff;
+            margin-bottom: 12px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.95);
+            line-height: 1.9;
+            font-weight: 400;
+        }
+
+        .contact-info strong {
+            color: #fbbf24;
+            font-weight: 600;
+        }
+
+        .contact-info a {
+            color: #93c5fd;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .contact-info a:hover {
+            color: #fbbf24;
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 0;
+            padding: 30px 60px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+            padding-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: #1e3a8a;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            padding-left: 12px;
+            border-left: 4px solid #3b82f6;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        .summary {
+            font-size: 11.5px;
+            line-height: 1.8;
+            color: #374151;
+            text-align: justify;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 3px solid #3b82f6;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            font-size: 11px;
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        .skill-item {
+            display: flex;
+            line-height: 1.7;
+            padding: 6px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .skill-item:last-child {
+            border-bottom: none;
+        }
+
+        .skill-label {
+            font-weight: 600;
+            min-width: 200px;
+            color: #1e3a8a;
+        }
+
+        .skill-value {
+            color: #4b5563;
+            flex: 1;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+            padding: 18px;
+            background: #fafbfc;
+            border-radius: 6px;
+            border-left: 3px solid #10b981;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .experience-item:hover {
+            transform: translateX(3px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .job-title {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: #1e3a8a;
+        }
+
+        .job-company {
+            font-size: 12px;
+            color: #6b7280;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+
+        .job-date {
+            font-size: 10.5px;
+            color: #9ca3af;
+            font-style: italic;
+            background: #e0e7ff;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-weight: 500;
+        }
+
+        .responsibilities {
+            list-style: none;
+            padding-left: 0;
+            font-size: 11px;
+        }
+
+        .responsibilities li {
+            margin-bottom: 8px;
+            padding-left: 22px;
+            position: relative;
+            line-height: 1.7;
+            color: #374151;
+            text-align: justify;
+        }
+
+        .responsibilities li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .project-item {
+            margin-bottom: 20px;
+            padding: 18px;
+            background: #fafbfc;
+            border-radius: 6px;
+            border-left: 3px solid #8b5cf6;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project-item:hover {
+            transform: translateX(3px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .project-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-title {
+            font-size: 12.5px;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 6px;
+        }
+
+        .project-links {
+            font-size: 10px;
+            margin-bottom: 6px;
+        }
+
+        .project-links a {
+            color: #3b82f6;
+            text-decoration: none;
+            margin-right: 12px;
+            padding: 3px 8px;
+            background: #dbeafe;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            display: inline-block;
+        }
+
+        .project-links a:hover {
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+        }
+
+        .project-tech {
+            font-size: 10px;
+            color: #6b7280;
+            margin-bottom: 8px;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .education-item {
+            margin-bottom: 18px;
+            padding: 16px;
+            background: #fafbfc;
+            border-radius: 6px;
+            border-left: 3px solid #f59e0b;
+        }
+
+        .education-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .degree {
+            font-size: 12.5px;
+            font-weight: 700;
+            color: #1e3a8a;
+        }
+
+        .institution {
+            font-size: 11px;
+            color: #6b7280;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+
+        .edu-date {
+            font-size: 10.5px;
+            color: #9ca3af;
+            font-style: italic;
+            margin-bottom: 8px;
+            background: #fef3c7;
+            padding: 3px 10px;
+            border-radius: 12px;
+            display: inline-block;
+            font-weight: 500;
+        }
+
+        .edu-description {
+            font-size: 11px;
+            color: #374151;
+            line-height: 1.7;
+            text-align: justify;
+            margin-top: 8px;
+        }
+
+        .cert-item {
+            margin-bottom: 16px;
+            padding: 16px;
+            background: #fafbfc;
+            border-radius: 6px;
+            border-left: 3px solid #06b6d4;
+        }
+
+        .cert-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .cert-title {
+            font-size: 12.5px;
+            font-weight: 700;
+            color: #1e3a8a;
+        }
+
+        .cert-org {
+            font-size: 11px;
+            color: #6b7280;
+            font-weight: 500;
+        }
+
+        .cert-description {
+            font-size: 10.5px;
+            color: #374151;
+            line-height: 1.7;
+            margin-top: 6px;
+        }
+
+        .achievements {
+            list-style: none;
+            padding-left: 0;
+            font-size: 11px;
+        }
+
+        .achievements li {
+            margin-bottom: 10px;
+            padding: 10px 10px 10px 22px;
+            position: relative;
+            line-height: 1.7;
+            color: #374151;
+            background: #f0fdf4;
+            border-radius: 4px;
+            border-left: 3px solid #10b981;
+        }
+
+        .achievements li:before {
+            content: "✓";
+            position: absolute;
+            left: 6px;
+            top: 10px;
+            color: #10b981;
+            font-weight: bold;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="print-instructions no-print"
+        style="position: fixed; top: 20px; right: 20px; background: #3498db; color: white; padding: 15px 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); max-width: 250px; font-size: 13px; line-height: 1.6;">
+        <strong style="display: block; margin-bottom: 8px; font-size: 14px;">💡 To Save as PDF:</strong>
+        <div style="margin-bottom: 8px;">
+            <strong>Windows:</strong> Press Ctrl + P<br>
+            <strong>Mac:</strong> Press Cmd + P
+        </div>
+        <div style="font-size: 11px; opacity: 0.9; margin-bottom: 10px;">
+            Then select "Save as PDF" as destination
+        </div>
+        <button onclick="window.print()"
+            style="width: 100%; padding: 8px; background: white; color: #3498db; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 12px;">
+            Click to Print
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>YUVRAJ SINGH GAHLOT</h1>
+            <div class="contact-info">
+                <strong>Email:</strong> yuv2819@gmail.com | <strong>Phone:</strong> +91 6377960136 |
+                <strong>Location:</strong> Mumbai, India<br>
+                <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yuv2819"
+                    target="_blank">linkedin.com/in/yuv2819</a> |
+                <strong>Portfolio:</strong> <a href="My Portfolio/index.html" target="_blank">My Portfolio</a><br>
+                <strong>GitHub:</strong> <a href="https://github.com/yuv2819-cmyk"
+                    target="_blank">github.com/yuv2819-cmyk</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p class="summary">
+                Data Scientist with 3+ years building AI/ML solutions for businesses, backed by 7 years of analytical
+                problem-solving in engineering operations. Proven track record delivering measurable results: 25%
+                efficiency improvements in process optimization and 30% reduction in data processing times through
+                Python-based automation and machine learning models. Specialized in generative AI, predictive analytics,
+                and building production-ready data pipelines. Successfully built and deployed 5+ end-to-end ML projects
+                including customer churn prediction (87% accuracy), real estate price prediction, NLP sentiment
+                analysis, and AI-powered SaaS applications with FastAPI backends.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <span class="skill-label">Programming Languages:</span>
+                    <span class="skill-value">Python, SQL, JavaScript, TypeScript</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-label">ML/AI Frameworks:</span>
+                    <span class="skill-value">Scikit-learn, XGBoost, NLTK, OpenAI API</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-label">Data Science:</span>
+                    <span class="skill-value">Pandas, NumPy, Statistical Modeling, Predictive Analytics, EDA, Feature
+                        Engineering</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-label">Backend & APIs:</span>
+                    <span class="skill-value">FastAPI, REST APIs, Node.js</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-label">Web Development:</span>
+                    <span class="skill-value">React, Next.js, HTML, CSS</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-label">Data Visualization:</span>
+                    <span class="skill-value">Tableau, Power BI, Plotly, Streamlit, Microsoft Excel</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-label">Tools & Platforms:</span>
+                    <span class="skill-value">Git/GitHub, Jupyter, Airtable, PostgreSQL</span>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-label">Specializations:</span>
+                    <span class="skill-value">Generative AI, Machine Learning, Business Process Automation, ETL
+                        Pipelines, Data Analysis</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Data Analyst (Freelance)</div>
+                        <div class="job-company">Mumbai, India</div>
+                    </div>
+                    <div class="job-date">February 2022 – Present</div>
+                </div>
+                <ul class="responsibilities">
+                    <li>Developing machine learning solutions for 8+ SMB clients across fintech, e-commerce, and real
+                        estate sectors through practical application of data science techniques and generative AI</li>
+                    <li>Built predictive analytics models using Python, Scikit-learn, and XGBoost that reduced client
+                        data processing time from 6 hours to 4.2 hours (30% improvement) through automated data
+                        workflows handling 50K+ daily records</li>
+                    <li>Created AI-powered automation tools leveraging OpenAI GPT APIs, reducing manual business
+                        processes by 40% for client operations including document processing and customer inquiry
+                        handling</li>
+                    <li>Designed and implemented RESTful APIs using FastAPI to serve machine learning models, enabling
+                        real-time predictions with 200ms average response time</li>
+                    <li>Developed full-stack SaaS applications combining TypeScript, Next.js frontend with
+                        Python/FastAPI backend, achieving deployment of 3 production applications</li>
+                    <li>Built interactive dashboards in Tableau, Power BI, and Streamlit to visualize business metrics
+                        and ML model predictions, improving client decision-making speed by 35%</li>
+                    <li>Applied generative AI and machine learning to solve real-world business problems while
+                        continuously expanding expertise in emerging AI/ML techniques and frameworks</li>
+                    <li>Worked directly with clients to translate business requirements into technical solutions,
+                        managing end-to-end project delivery from requirements gathering to deployment</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Data Analyst - Operations</div>
+                        <div class="job-company">Gahlot Mining Consultancy, Udaipur, India</div>
+                    </div>
+                    <div class="job-date">January 2019 – January 2022</div>
+                </div>
+                <ul class="responsibilities">
+                    <li>Analyzed operational datasets (500K+ records) to optimize mining processes, developing
+                        foundation in data analysis, statistical modeling, and Python-based automation</li>
+                    <li>Applied data-driven approaches improving process efficiency by 25% through systematic analysis,
+                        predictive modeling, and implementation of optimization algorithms</li>
+                    <li>Built automated data processing workflows using Python (Pandas, NumPy) and SQL to handle large
+                        datasets for operational reporting, reducing manual processing from 8 hours to 2 hours daily
+                    </li>
+                    <li>Created data visualizations and interactive dashboards using Tableau that improved reporting
+                        efficiency by 35% and enabled data-driven decision-making across operations teams</li>
+                    <li>Developed automated systems for data collection, cleaning, and validation, ensuring 99.5% data
+                        quality and consistency across multiple data sources</li>
+                    <li>Gained experience in translating complex technical requirements into actionable analytical
+                        solutions through cross-functional collaboration with engineering and management teams</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="project-item">
+                <div class="project-title">Entropy - AI Humanizer</div>
+                <div class="project-links">
+                    <a href="https://entropy-iota.vercel.app/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/yuv2819-cmyk/Entropy" target="_blank">GitHub Repository</a>
+                </div>
+                <div class="project-tech">Technologies: React, Vite, AI Integration</div>
+                <ul class="responsibilities">
+                    <li>Developed an advanced AI text humanizer that transforms AI-generated content into natural,
+                        human-like text, significantly improving readability and engagement for automated content.</li>
+                    <li>Built a high-performance, responsive user interface using React and Vite, ensuring a seamless
+                        and modern user experience.</li>
+                    <li>Integrated AI models to process and refine text dynamically, bridging the gap between artificial
+                        generation and authentic human expression.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Voidspace Canvas - Interactive Workflow Builder</div>
+                <div class="project-links">
+                    <a href="https://voidspace-canvas.vercel.app/" target="_blank">Live Demo</a>
+                    <a href="https://github.com/yuv2819-cmyk/voidspace-canvas" target="_blank">GitHub Repository</a>
+                </div>
+                <div class="project-tech">Technologies: React, TypeScript, Node.js, HTML5 Canvas</div>
+                <ul class="responsibilities">
+                    <li>Engineered a production-ready in-browser canvas for building connected workflows, featuring
+                        n8n-style edges and strongly-typed nodes.</li>
+                    <li>Implemented complex interactive features including drag-and-drop, real-time connection
+                        validation, and instant UI feedback loops.</li>
+                    <li>Designed a scalable and maintainable codebase using TypeScript and React, optimized for handling
+                        complex graph structures and visual data.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Data Science Portfolio - 5 Production-Ready ML Projects</div>
+                <div class="project-links">
+                    <a href="https://github.com/yuv2819-cmyk/data-science-portfolio" target="_blank">GitHub
+                        Repository</a>
+                </div>
+                <div class="project-tech">Technologies: Python, Scikit-learn, XGBoost, NLTK, Pandas, Plotly, Streamlit,
+                    Jupyter</div>
+                <ul class="responsibilities">
+                    <li>Built comprehensive portfolio of 5 industry-ready machine learning projects: customer churn
+                        prediction (87% accuracy), real estate price prediction (R² = 0.91), NLP sentiment analysis with
+                        VADER, K-means customer segmentation, and ARIMA time series sales forecasting</li>
+                    <li>Deployed interactive web applications using Streamlit for model inference, data visualization,
+                        and real-time predictions accessible to non-technical users</li>
+                    <li>Implemented complete ML pipeline for each project: data cleaning, exploratory data analysis,
+                        feature engineering, model selection and comparison, hyperparameter tuning with GridSearchCV,
+                        and comprehensive model evaluation</li>
+                    <li>Achieved measurable performance metrics: classification models with 85%+ accuracy, regression
+                        models with R² > 0.90, and properly validated time series forecasts</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Smart Spreadsheet - AI-Powered SaaS MVP for SMBs</div>
+                <div class="project-links">
+                    <a href="https://github.com/yuv2819-cmyk/Smart-spreadsheet" target="_blank">GitHub Repository</a>
+                </div>
+                <div class="project-tech">Technologies: TypeScript, Next.js, FastAPI, OpenAI GPT API, PostgreSQL, React
+                </div>
+                <ul class="responsibilities">
+                    <li>Developed multi-tenant spreadsheet application with CSV upload, real-time analytics engine,
+                        interactive charts, and AI-generated business insights using OpenAI GPT-4</li>
+                    <li>Integrated natural language querying capabilities allowing users to ask questions about their
+                        data in plain English, with AI generating SQL queries and visualizations automatically</li>
+                    <li>Built scalable RESTful API backend with FastAPI serving 15+ endpoints for data manipulation,
+                        chart generation, and AI features with JWT-based authentication</li>
+                    <li>Implemented real-time data processing pipeline handling CSV files up to 100MB with progress
+                        tracking and error handling for data quality validation</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Dubai Real Estate Hub - Luxury SaaS Dashboard</div>
+                <div class="project-links">
+                    <a href="https://github.com/yuv2819-cmyk/dubai-real-estate-hub" target="_blank">GitHub
+                        Repository</a>
+                </div>
+                <div class="project-tech">Technologies: JavaScript, React, Node.js, REST APIs, MongoDB</div>
+                <ul class="responsibilities">
+                    <li>Created professional real estate agent dashboard with property management, client tracking,
+                        analytics visualization, and automated reporting features</li>
+                    <li>Implemented responsive UI with modern design patterns following industry best practices,
+                        ensuring seamless experience across desktop and mobile devices</li>
+                    <li>Built scalable architecture supporting multi-user access with role-based permissions (admin,
+                        agent, viewer) and real-time data synchronization</li>
+                    <li>Integrated third-party APIs for property data enrichment and market analytics, providing agents
+                        with comprehensive property intelligence</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+
+            <div class="education-item">
+                <div class="degree">Bachelor of Engineering in Mining Engineering</div>
+                <div class="institution">Pacific University, Udaipur, India</div>
+                <div class="edu-date">January 2015 – January 2019</div>
+                <p class="edu-description">
+                    Specialized in environmental systems analysis with emphasis on quantitative analysis, technical
+                    problem-solving, and data-driven decision making. Applied statistical methods, optimization
+                    algorithms, and modeling techniques to extraction processes, building strong analytical foundation
+                    for machine learning, predictive analytics, and business automation applications.
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Professional Development</h2>
+
+            <div class="cert-item">
+                <div class="cert-title">Data Science and AI – Core Expertise</div>
+                <div class="cert-org">Intellipaat | January 2023</div>
+                <p class="cert-description">
+                    Demonstrated proficiency in advanced data science techniques and artificial intelligence
+                    applications. Validated skills in machine learning algorithms, statistical modeling, deep learning
+                    fundamentals, and AI-driven problem solving for data-informed business decision-making.
+                    <br><br>
+                    <a href="https://lms.intellipaat.com/certificate-link/?Yz1jdXMtNTU3MjQ0NCZ1PTIwNjc4MiZleHQ9MQ=="
+                        target="_blank" style="color: #3b82f6; text-decoration: none; font-weight: 500;">View
+                        Certificate</a>
+                    <br>
+                    <span style="font-size: 10px; color: #6b7280; font-style: italic;">*Note: Name on certificate
+                        appears differently</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Key Achievements</h2>
+            <ul class="achievements">
+                <li>Built and deployed 8+ production-ready data science and full-stack SaaS projects serving real
+                    business clients with measurable ROI</li>
+                <li>Improved operational efficiency by 25% through data analysis and optimization techniques in
+                    industrial operations environment</li>
+                <li>Reduced client data processing time by 30% (from 6 hours to 4.2 hours) through automated Python
+                    workflows and machine learning pipelines</li>
+                <li>Achieved 87% accuracy in customer churn prediction model and R² = 0.91 in real estate price
+                    prediction model</li>
+                <li>Successfully transitioned from engineering to data science through dedicated self-learning,
+                    freelance projects, and hands-on application of ML techniques</li>
+                <li>Contributed to open-source project (n8n-docs) supporting automation and workflow tools community
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
