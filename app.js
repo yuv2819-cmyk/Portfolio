@@ -103,6 +103,21 @@
     stats: ['Responsive UI', 'Clean UX'],
     live: 'https://coursenetdemo.netlify.app/',
     github: ''
+  },
+  {
+    id: 'python-cli-projects',
+    title: 'Python CLI Projects',
+    poster: '',
+    categories: ['python'],
+    stack: 'Python, JSON, CSV, argparse',
+    summary: 'Three standard-library CLI apps: a to-do list, a timed Python quiz, and an inventory manager with CSV persistence.',
+    problem: 'Hiring screens needed readable Python that shows validation, file I/O, and menu-driven UX without a web stack.',
+    architecture: 'Three stdlib programs with fail-closed input checks, JSON/CSV persistence, and a shuffled quiz loop with optional timer and skip.',
+    impact: 'A public repo that runs in one command, plus completed CodeChef Python project-track problems on profile yuvraj_gahlot.',
+    lessons: 'Exact prompts and error strings matter as much as features when the user is a terminal or an automated grader.',
+    stats: ['3 CLI Apps', 'Stdlib Only'],
+    live: '',
+    github: 'https://github.com/yuv2819-cmyk/python-cli-projects'
   }
 ];
 
@@ -125,7 +140,8 @@ function categoryLabel(category) {
     ai: 'AI Product',
     ml: 'ML System',
     fullstack: 'Full Stack',
-    frontend: 'Frontend'
+    frontend: 'Frontend',
+    python: 'Python CLI'
   };
   return map[category] || 'Project';
 }
